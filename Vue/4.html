@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>Vue 的实例属性和方法</title>
+        <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    </head>
+    
+    <div id="app">
+        <p>{{name}} </p>
+        <input type="text" v-model="name" placeholder="请输入" style="border:1px solid black"/>
+    </div>
+   
+    
+    <script>
+        var data = {
+            name:"杭城小刘"
+        }
+
+        var vm = new Vue({
+            el:"#app",
+            data:data
+        });
+        
+        //$watch 方法是一个 实例方法，观察属性的某个值改变后调用
+      vm.$watch("name",function(newValue,oldValue){
+        console.log("该方法在 name 改变时调用");
+        console.log("newValue-> " + newValue + " ,oldValue-> " + oldValue);
+      });
+        
+    console.log(vm.$data === data);
+    console.log(vm.$el === document.getElementById("app"));
+
+    </script>
+</html>
