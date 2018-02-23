@@ -21,12 +21,12 @@ var fs = require("fs");
 var app = express();
 
 app.get("/test",function(req,res){
-    fs.readFile('data.txt',function(err,data){
+    fs.readFile('./data.txt',function(err,data){
         if (err) {
             res.status(500).send("read file1 error");
         }
 
-        fs.readFile("data.txt",function(err,data){
+        fs.readFile("./data.txt",function(err,data){
             if (err) {
                 res.status(500).send("read file2 error");
             }
