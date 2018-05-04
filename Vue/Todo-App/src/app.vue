@@ -9,17 +9,17 @@
 
 <script>
     export default{
+        name:"App",
         data(){
             return {
-                "text":"杭城小刘"
+                text:"杭州 | 杭城小刘 | iOS && Web"
             }
         }
     }
-    
 </script>
 
 
-<style>
+<style scoped>
 #test{
     color:red;
 }

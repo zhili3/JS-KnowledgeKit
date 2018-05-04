@@ -1,6 +1,7 @@
 <html>
     <head>
         <title>Vue的数据绑定和事件绑定</title>
+        <meta charset="utf-8" />
         <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     </head>
 
@@ -21,7 +22,8 @@
             },
             methods:{
                 reverseMessage:function(){
-                    this.message = this.message.split("").reverse().join("");
+//                    this.message = this.message.split("").reverse().join("");
+this.message = "刘斌鹏";
                 },
                 upperCase:function(){
                     this.letter = this.letter.toString().toLocaleUpperCase();

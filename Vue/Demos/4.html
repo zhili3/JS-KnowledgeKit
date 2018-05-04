@@ -17,17 +17,19 @@
 
         var vm = new Vue({
             el:"#app",
-            data:data
+            data(){
+                return data;
+            }
         });
         
         //$watch 方法是一个 实例方法，观察属性的某个值改变后调用
-      vm.$watch("name",function(newValue,oldValue){
-        console.log("该方法在 name 改变时调用");
-        console.log("newValue-> " + newValue + " ,oldValue-> " + oldValue);
-      });
+        vm.$watch("name",function(newValue,oldValue){
+            console.log("该方法在 name 改变时调用");
+            console.log("newValue-> " + newValue + " ,oldValue-> " + oldValue);
+        });
         
-    console.log(vm.$data === data);
-    console.log(vm.$el === document.getElementById("app"));
+        console.log(vm.$data === data);
+        console.log(vm.$el === document.getElementById("app"));
 
     </script>
 </html>

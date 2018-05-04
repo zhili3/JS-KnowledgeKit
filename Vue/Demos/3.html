@@ -1,13 +1,15 @@
 <html>
     <head>
         <title>Vue可追踪的组件属性</title>
+        <meta charset="utf-8" />
         <script src="https://cdn.jsdelivr.net/npm/vue"></script>
     </head>
     
     <div id="app">
-        <p>{{obj.foo}}</p>
+    
+       <p>{{obj.foo}}</p> 
 
-        <button @click="obj.foo='baz'">change it</button>
+        <button v-on:click="obj.foo='baz'">change it</button> 
     </div>
    
     
@@ -17,7 +19,9 @@
         };
         //组件在初始化的时候从 data 中读取到的属性都会被注册到 Vue 的响应式系统中去。
         // 只要被 Object.freeze() 过。属性的变化不会被响应系统追踪
+        
         Object.freeze(obj);
+
 
         var App = new Vue({
             el:"#app",

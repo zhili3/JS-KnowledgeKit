@@ -33,6 +33,7 @@ export default {
       */
 
       this.$emit("child-tell-me-something",this.msg);
+      this.$emit("child-tell-me-something",this.msg);
     }
   }
   
