@@ -1,0 +1,15 @@
+{
+  "name": "form-get",
+  "version": "1.0.0",
+  "description": "",
+  "main": "url.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon url.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^1.18.4"
+  }
+}

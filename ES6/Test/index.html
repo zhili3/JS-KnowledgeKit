@@ -1,0 +1,93 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>ES6</title>
+</head>
+
+<body>
+
+</body>
+<script>
+  /*
+class Cacultor { 
+constructor (){
+  console.log('constructor')
+}
+
+sum (a, b) {
+  return a + b
+}
+}
+
+
+let cal = new Cacultor();
+console.log(cal.sum(3,4))
+*/
+
+
+  /*
+  {
+    let a = 1;
+    var b = 2;
+  }
+
+  
+  console.log(b);
+  console.log(a);
+  */
+
+  /*
+ let sum = new Array();
+  for (let index = 0;index < 10; index++){
+    sum[index] = function (){
+      console.log(index);
+    }
+  }
+  sum[9]();
+  */
+
+
+/*
+ for (let index = 0; index < 5; index++) {
+   console.log(index1);
+   let index1 = "Hello world";
+   console.log(index1);
+ }
+ */
+
+/*
+var temp = '123';
+if (true) {
+  temp = 22;
+  let temp;
+}
+*/
+
+/*
+//ES6 规定在块级作用域里面如果使用了 const 和 let ，那么必须先声明后使用。称为“暂时性死区 （TDZ Temporal Dead Zone）”
+if (true) {
+  //TDZ 开始
+
+  console.log(typeof hello);  //使用 typeof 对于没声明的变量反而安全。对于在块级作用域里面未声明的 变量反而不安全
+  console.log(typeof message);  //Uncaught ReferenceError: message is not defined
+  message = "Hello world";  // Uncaught ReferenceError: message is not defined
+  console.log(message);   // Uncaught ReferenceError: message is not defined
+
+  let message;
+  //TDZ 结束
+  console.log(message); //undefin
+
+  message = "work hard";
+  console.log(message); // Wokr hard
+}
+*/
+
+
+
+
+
+
+</script>
+
+</html>

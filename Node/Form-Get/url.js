@@ -11,8 +11,9 @@ var server = http.createServer(function(request,response){
     var job = params.job;
 
     response.writeHead(200,{"Content-Type":"text/plain;Charset=utf-8"})
-    console.log("name: " + name + " age:" + age + " job:" + job);
-    response.end("name: " + name + " age:" + age + " job:" + job);
+    response.end("name: " + name + " age:" + age + " job:" + job)
 });
 
-server.listen(3000,"127.0.0.1");
+server.listen(3000,"127.0.0.1", function(){
+    console.log('app is listening on 127.0.0.1:3000')
+});

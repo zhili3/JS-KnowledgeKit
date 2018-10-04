@@ -1,0 +1,6 @@
+// require('./index1')
+// require('./index2')
+// require('./index3')
+// require('./index4')
+// require('./index5')
+require('./index6')
